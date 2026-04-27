@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            First web page
+        </title>
+        <body>
+            <div id="app">
+                <p id="p1">Welcome to Web </p>
+                <p id="p2"> 2020</p>
+                <button onclick="chageIt()">Change it</button>
+            </div>
+            <script>
+                function chageIt(){
+                    const p1 = document.getElementById("p1");
+                    p1.textContent = "Welcome to JS ";
+                    const p2 = document.getElementById("p2");
+                    p2.textContent = 2026;
+
+                }
+            </script>
+        </body>
+    </head>
+</html>

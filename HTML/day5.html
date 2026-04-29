@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>JS funciton</title>
+    </head>
+    <body>
+        <input id="input"/>
+        <button onclick="convertIt()">Convert</button>
+        <span id="output"></span>
+        <script>
+            function convertIt(){
+                const input = document.getElementById("input").value;
+                const inputChar = input.split("")
+                const changedChar = inputChar.map(
+                    function(c){
+                        if(c == c.toLowerCase()){
+                            return c.toUpperCase();
+                        }
+                        else{
+                            return c.toLowerCase();
+                        }
+                    }
+                )
+                const output = document.getElementById("output");
+                const combineChar = changedChar.join("");
+                output.textContent = combineChar;
+                console.log(changedChar);
+            }
+        </script>
+    </body>
+</htlm>
